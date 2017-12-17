@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="VirginiaBeach" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="inw-Cp-AtA" id="Pen-6c-W6L"/>
+                <outlet property="loginTextField" destination="RUc-I2-E6g" id="2tv-lr-dJW"/>
+                <outlet property="passwordTextField" destination="m26-fw-C7s" id="Ngo-M4-0ZA"/>
+                <outlet property="segmentControl" destination="ajG-rV-bFf" id="Kkp-9j-M9P"/>
+                <outlet property="titleLabel" destination="7KX-aT-JWP" id="hNB-TO-gUZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KX-aT-JWP">
+                    <rect key="frame" x="143" y="40" width="89" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ajG-rV-bFf">
+                    <rect key="frame" x="125" y="161" width="125" height="29"/>
+                    <segments>
+                        <segment title="Login"/>
+                        <segment title="Sign Up"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </segmentedControl>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RUc-I2-E6g">
+                    <rect key="frame" x="30" y="289" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m26-fw-C7s">
+                    <rect key="frame" x="30" y="369" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inw-Cp-AtA">
+                    <rect key="frame" x="20" y="584" width="334" height="33"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="hTY-IW-2lk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.28697213530540466" green="0.70678359270095825" blue="0.90687447786331177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RUc-I2-E6g" secondAttribute="trailing" constant="30" id="35K-SP-sxY"/>
+                <constraint firstItem="RUc-I2-E6g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="8VJ-Gw-hBg"/>
+                <constraint firstItem="m26-fw-C7s" firstAttribute="top" secondItem="RUc-I2-E6g" secondAttribute="bottom" constant="50" id="Cc3-12-jaD"/>
+                <constraint firstItem="inw-Cp-AtA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="I1x-Ry-ZSb"/>
+                <constraint firstItem="ajG-rV-bFf" firstAttribute="top" secondItem="7KX-aT-JWP" secondAttribute="bottom" constant="100" id="Jed-xy-qQw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m26-fw-C7s" secondAttribute="trailing" constant="30" id="PQg-EB-nyv"/>
+                <constraint firstItem="ajG-rV-bFf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Twf-Go-3lS"/>
+                <constraint firstItem="7KX-aT-JWP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X99-wF-qeQ"/>
+                <constraint firstItem="m26-fw-C7s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="XDt-gh-iS5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="inw-Cp-AtA" secondAttribute="bottom" constant="50" id="YJS-Vr-Nwy"/>
+                <constraint firstItem="inw-Cp-AtA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fho-Fg-6Xq"/>
+                <constraint firstItem="RUc-I2-E6g" firstAttribute="top" secondItem="ajG-rV-bFf" secondAttribute="bottom" constant="100" id="jST-Qr-0HC"/>
+                <constraint firstItem="m26-fw-C7s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n1J-Gy-sBM"/>
+                <constraint firstItem="RUc-I2-E6g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qFx-7V-ztZ"/>
+                <constraint firstItem="7KX-aT-JWP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="xT3-7y-g97"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
