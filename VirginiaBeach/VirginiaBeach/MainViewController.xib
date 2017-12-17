@@ -66,6 +66,14 @@
                         <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="hTY-IW-2lk"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Db-b5-K9W">
+                    <rect key="frame" x="204" y="489" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="pass:" destination="-1" eventType="touchUpInside" id="3ig-l5-gjB"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.28697213530540466" green="0.70678359270095825" blue="0.90687447786331177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>

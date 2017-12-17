@@ -27,12 +27,19 @@ class VirginiaListViewController: UIViewController {
         super.viewDidLoad()
         
         virginiaBeachListTableView.delegate = self
+        virginiaBeachListTableView.dataSource = self
 
         mailLabel.text = Auth.auth().currentUser?.email
         sideBarLeftConstraint.constant = -300
         
         //let navigationBar = UINavigationBar.appearance()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: UIBarButtonItemStyle.plain, target: self, action: #selector(sideMenu))
+        
+        
+        let restaurantCellNibName = UINib(nibName: "RestaurantTableViewCell", bundle: nil)
+        //let attractionCellNibName = UINib(nibName: "RestaurantTableViewCell", bundle: nil)
+        virginiaBeachListTableView.register(restaurantCellNibName, forCellReuseIdentifier: restaurantCellId)
+        
         
     }
     
@@ -70,9 +77,9 @@ extension VirginiaListViewController : UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = virginiaBeachListTableView.dequeueReusableCell(withIdentifier: restaurantCellId)
+        let cell = virginiaBeachListTableView.dequeueReusableCell(withIdentifier: restaurantCellId) as! RestaurantTableViewCell
         
-        return cell!
+        return cell
     }
     
     

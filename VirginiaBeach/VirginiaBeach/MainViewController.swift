@@ -30,6 +30,9 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         
     }
 
+    @IBAction func pass(_ sender: Any) {
+        self.present(UINavigationController(rootViewController : VirginiaListViewController()) , animated: true, completion: nil)
+    }
     
     @IBAction func loginAction(_ sender: Any) {
        

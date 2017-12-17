@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5A0941CF1FE6983400E86A66 /* VirginiaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0941CD1FE6983400E86A66 /* VirginiaListViewController.swift */; };
 		5A0941D01FE6983400E86A66 /* VirginiaListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0941CE1FE6983400E86A66 /* VirginiaListViewController.xib */; };
+		5A65DFB21FE70BF400A2506A /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65DFB01FE70BF400A2506A /* RestaurantTableViewCell.swift */; };
+		5A65DFB31FE70BF400A2506A /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A65DFB11FE70BF400A2506A /* RestaurantTableViewCell.xib */; };
 		5A932D9C1FE5B25300A67DC4 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A932D9A1FE5B25300A67DC4 /* Montserrat-Regular.otf */; };
 		5A932D9D1FE5B25300A67DC4 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A932D9B1FE5B25300A67DC4 /* OpenSans-Regular.ttf */; };
 		5AABC4F31FE5A48E00548AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABC4F21FE5A48E00548AA9 /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 		36087F7D471A2CC6013754E9 /* Pods-VirginiaBeach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirginiaBeach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VirginiaBeach/Pods-VirginiaBeach.debug.xcconfig"; sourceTree = "<group>"; };
 		5A0941CD1FE6983400E86A66 /* VirginiaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirginiaListViewController.swift; sourceTree = "<group>"; };
 		5A0941CE1FE6983400E86A66 /* VirginiaListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VirginiaListViewController.xib; sourceTree = "<group>"; };
+		5A65DFB01FE70BF400A2506A /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		5A65DFB11FE70BF400A2506A /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
 		5A932D9A1FE5B25300A67DC4 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		5A932D9B1FE5B25300A67DC4 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		5AABC4EF1FE5A48E00548AA9 /* VirginiaBeach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirginiaBeach.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,8 @@
 				5AABC5081FE5A50000548AA9 /* MainViewController.xib */,
 				5A0941CD1FE6983400E86A66 /* VirginiaListViewController.swift */,
 				5A0941CE1FE6983400E86A66 /* VirginiaListViewController.xib */,
+				5A65DFB01FE70BF400A2506A /* RestaurantTableViewCell.swift */,
+				5A65DFB11FE70BF400A2506A /* RestaurantTableViewCell.xib */,
 				5AABC4FC1FE5A48E00548AA9 /* Assets.xcassets */,
 				5AABC4FE1FE5A48E00548AA9 /* LaunchScreen.storyboard */,
 				5A932D9E1FE5B26300A67DC4 /* fonts */,
@@ -176,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A65DFB31FE70BF400A2506A /* RestaurantTableViewCell.xib in Resources */,
 				5AABC5001FE5A48E00548AA9 /* LaunchScreen.storyboard in Resources */,
 				5A0941D01FE6983400E86A66 /* VirginiaListViewController.xib in Resources */,
 				5AEEF0AF1FE5AFC800A36AFD /* GoogleService-Info.plist in Resources */,
@@ -251,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A65DFB21FE70BF400A2506A /* RestaurantTableViewCell.swift in Sources */,
 				5AABC5091FE5A50000548AA9 /* MainViewController.swift in Sources */,
 				5AABC4FB1FE5A48E00548AA9 /* VirginiaBeach.xcdatamodeld in Sources */,
 				5A0941CF1FE6983400E86A66 /* VirginiaListViewController.swift in Sources */,
