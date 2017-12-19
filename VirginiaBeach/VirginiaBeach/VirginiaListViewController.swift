@@ -23,6 +23,8 @@ class VirginiaListViewController: UIViewController {
     
     @IBOutlet weak var virginiaBeachListTableView: UITableView!
     
+    var virginiaList : [AnyObject] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,8 +39,16 @@ class VirginiaListViewController: UIViewController {
         
         
         let restaurantCellNibName = UINib(nibName: "RestaurantTableViewCell", bundle: nil)
-        //let attractionCellNibName = UINib(nibName: "RestaurantTableViewCell", bundle: nil)
+        let attractionCellNibName = UINib(nibName: "AttractionTableViewCell", bundle: nil)
         virginiaBeachListTableView.register(restaurantCellNibName, forCellReuseIdentifier: restaurantCellId)
+        virginiaBeachListTableView.register(attractionCellNibName, forCellReuseIdentifier: attractionCellId)
+        
+        let restaurant = Restaurant(name: "Adam Thoroughgood House", image: "http://virginia.mobyview.eu/api/entity_file/183", locationArea: "Ocean Front", distance: "2 metres", description: "Test description", address: "1636 Parish Rd, Virginia Beach, VA 23455")
+        virginiaList.append(restaurant)
+        let restaurant1 = Restaurant(name: "Adventure Parasail", image: "http://virginia.mobyview.eu/api/entity_file/183", locationArea: "Ocean Front", distance: "3 metres", description: "Test description", address: "300 Winston Salem Avenue Virginia Beach, VA 23451")
+        virginiaList.append(restaurant1)
+        let restaurant2 = Restaurant(name: "Adventure Park at Virginia Aquarium", image: "http://virginia.mobyview.eu/api/entity_file/183", locationArea: "Ocean Front", distance: "4 metres", description: "Test description", address: "801 General Booth Boulevard Virginia Beach, Virginia 23451 ")
+        virginiaList.append(restaurant2)
         
         
     }
@@ -73,13 +83,41 @@ class VirginiaListViewController: UIViewController {
 
 extension VirginiaListViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return virginiaList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = virginiaBeachListTableView.dequeueReusableCell(withIdentifier: restaurantCellId) as! RestaurantTableViewCell
+    
+        let cell = virginiaBeachListTableView.dequeueReusableCell(withIdentifier: attractionCellId) as! AttractionTableViewCell
+        
+        if indexPath.row % 2 == 0 {
+            
+            let cell = virginiaBeachListTableView.dequeueReusableCell(withIdentifier: restaurantCellId) as! RestaurantTableViewCell
+            let restaurant = virginiaList[indexPath.row] as! Restaurant
+            cell.restaurantName.text = restaurant.name
+            cell.restaurantLocationArea.text = restaurant.locationArea
+            cell.restaurantDistance.text = restaurant.distance
+            
+            return cell
+        }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if indexPath.row % 2 == 0 {
+            
+            return 95
+        }
+        return 129
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let restaurantDetailViewController = RestaurantDetailViewController()
+        restaurantDetailViewController.restaurant = virginiaList[indexPath.row] as? Restaurant
+        navigationController?.pushViewController(restaurantDetailViewController, animated: true)
     }
     
     

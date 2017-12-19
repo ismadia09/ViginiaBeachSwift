@@ -11,14 +11,24 @@
 		5A0941D01FE6983400E86A66 /* VirginiaListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0941CE1FE6983400E86A66 /* VirginiaListViewController.xib */; };
 		5A65DFB21FE70BF400A2506A /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65DFB01FE70BF400A2506A /* RestaurantTableViewCell.swift */; };
 		5A65DFB31FE70BF400A2506A /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A65DFB11FE70BF400A2506A /* RestaurantTableViewCell.xib */; };
+		5A65DFB61FE7196E00A2506A /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65DFB41FE7196E00A2506A /* RestaurantDetailViewController.swift */; };
+		5A65DFB71FE7196E00A2506A /* RestaurantDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A65DFB51FE7196E00A2506A /* RestaurantDetailViewController.xib */; };
+		5A7EBA3D1FE8F987005C4061 /* AttractionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EBA3B1FE8F987005C4061 /* AttractionDetailViewController.swift */; };
+		5A7EBA3E1FE8F987005C4061 /* AttractionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7EBA3C1FE8F987005C4061 /* AttractionDetailViewController.xib */; };
 		5A932D9C1FE5B25300A67DC4 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A932D9A1FE5B25300A67DC4 /* Montserrat-Regular.otf */; };
 		5A932D9D1FE5B25300A67DC4 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A932D9B1FE5B25300A67DC4 /* OpenSans-Regular.ttf */; };
+		5AA23B7C1FE85B0600A082DC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23B7B1FE85B0600A082DC /* Restaurant.swift */; };
+		5AA23B7E1FE85B2C00A082DC /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23B7D1FE85B2C00A082DC /* Attraction.swift */; };
+		5AA23B811FE8667400A082DC /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA23B7F1FE8667400A082DC /* AttractionTableViewCell.swift */; };
+		5AA23B821FE8667400A082DC /* AttractionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA23B801FE8667400A082DC /* AttractionTableViewCell.xib */; };
 		5AABC4F31FE5A48E00548AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABC4F21FE5A48E00548AA9 /* AppDelegate.swift */; };
 		5AABC4FB1FE5A48E00548AA9 /* VirginiaBeach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AABC4F91FE5A48E00548AA9 /* VirginiaBeach.xcdatamodeld */; };
 		5AABC4FD1FE5A48E00548AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AABC4FC1FE5A48E00548AA9 /* Assets.xcassets */; };
 		5AABC5001FE5A48E00548AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AABC4FE1FE5A48E00548AA9 /* LaunchScreen.storyboard */; };
 		5AABC5091FE5A50000548AA9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABC5071FE5A50000548AA9 /* MainViewController.swift */; };
 		5AABC50A1FE5A50000548AA9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AABC5081FE5A50000548AA9 /* MainViewController.xib */; };
+		5AB04AF81FE97FAE00EB87F1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB04AF71FE97FAE00EB87F1 /* MapKit.framework */; };
+		5AB2F3231FE857A0006B5CEA /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2F3221FE857A0006B5CEA /* DataHandler.swift */; };
 		5AEEF0AF1FE5AFC800A36AFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AEEF0AE1FE5AFC700A36AFD /* GoogleService-Info.plist */; };
 		C569E460257EF0A51FA5D95C /* Pods_VirginiaBeach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC3E454A4D4B5D2FC481CD6 /* Pods_VirginiaBeach.framework */; };
 /* End PBXBuildFile section */
@@ -29,8 +39,16 @@
 		5A0941CE1FE6983400E86A66 /* VirginiaListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VirginiaListViewController.xib; sourceTree = "<group>"; };
 		5A65DFB01FE70BF400A2506A /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		5A65DFB11FE70BF400A2506A /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
+		5A65DFB41FE7196E00A2506A /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		5A65DFB51FE7196E00A2506A /* RestaurantDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantDetailViewController.xib; sourceTree = "<group>"; };
+		5A7EBA3B1FE8F987005C4061 /* AttractionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailViewController.swift; sourceTree = "<group>"; };
+		5A7EBA3C1FE8F987005C4061 /* AttractionDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttractionDetailViewController.xib; sourceTree = "<group>"; };
 		5A932D9A1FE5B25300A67DC4 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		5A932D9B1FE5B25300A67DC4 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		5AA23B7B1FE85B0600A082DC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		5AA23B7D1FE85B2C00A082DC /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
+		5AA23B7F1FE8667400A082DC /* AttractionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionTableViewCell.swift; sourceTree = "<group>"; };
+		5AA23B801FE8667400A082DC /* AttractionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttractionTableViewCell.xib; sourceTree = "<group>"; };
 		5AABC4EF1FE5A48E00548AA9 /* VirginiaBeach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirginiaBeach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AABC4F21FE5A48E00548AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AABC4FA1FE5A48E00548AA9 /* VirginiaBeach.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirginiaBeach.xcdatamodel; sourceTree = "<group>"; };
@@ -39,6 +57,8 @@
 		5AABC5011FE5A48E00548AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AABC5071FE5A50000548AA9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5AABC5081FE5A50000548AA9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		5AB04AF71FE97FAE00EB87F1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5AB2F3221FE857A0006B5CEA /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		5AEEF0AE1FE5AFC700A36AFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DC3E454A4D4B5D2FC481CD6 /* Pods_VirginiaBeach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirginiaBeach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66D68CAEA0FFA8C89093338 /* Pods-VirginiaBeach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirginiaBeach.release.xcconfig"; path = "Pods/Target Support Files/Pods-VirginiaBeach/Pods-VirginiaBeach.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB04AF81FE97FAE00EB87F1 /* MapKit.framework in Frameworks */,
 				C569E460257EF0A51FA5D95C /* Pods_VirginiaBeach.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +80,7 @@
 		13B8961ED2EFA3333E3C2E65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5AB04AF71FE97FAE00EB87F1 /* MapKit.framework */,
 				6DC3E454A4D4B5D2FC481CD6 /* Pods_VirginiaBeach.framework */,
 			);
 			name = Frameworks;
@@ -101,12 +123,21 @@
 				5A0941CE1FE6983400E86A66 /* VirginiaListViewController.xib */,
 				5A65DFB01FE70BF400A2506A /* RestaurantTableViewCell.swift */,
 				5A65DFB11FE70BF400A2506A /* RestaurantTableViewCell.xib */,
+				5A65DFB41FE7196E00A2506A /* RestaurantDetailViewController.swift */,
+				5A65DFB51FE7196E00A2506A /* RestaurantDetailViewController.xib */,
+				5AA23B7F1FE8667400A082DC /* AttractionTableViewCell.swift */,
+				5AA23B801FE8667400A082DC /* AttractionTableViewCell.xib */,
+				5A7EBA3B1FE8F987005C4061 /* AttractionDetailViewController.swift */,
+				5A7EBA3C1FE8F987005C4061 /* AttractionDetailViewController.xib */,
 				5AABC4FC1FE5A48E00548AA9 /* Assets.xcassets */,
 				5AABC4FE1FE5A48E00548AA9 /* LaunchScreen.storyboard */,
 				5A932D9E1FE5B26300A67DC4 /* fonts */,
 				5AABC5011FE5A48E00548AA9 /* Info.plist */,
 				5AEEF0AE1FE5AFC700A36AFD /* GoogleService-Info.plist */,
 				5AABC4F91FE5A48E00548AA9 /* VirginiaBeach.xcdatamodeld */,
+				5AB2F3221FE857A0006B5CEA /* DataHandler.swift */,
+				5AA23B7B1FE85B0600A082DC /* Restaurant.swift */,
+				5AA23B7D1FE85B2C00A082DC /* Attraction.swift */,
 			);
 			path = VirginiaBeach;
 			sourceTree = "<group>";
@@ -156,6 +187,11 @@
 					5AABC4EE1FE5A48E00548AA9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -182,9 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7EBA3E1FE8F987005C4061 /* AttractionDetailViewController.xib in Resources */,
 				5A65DFB31FE70BF400A2506A /* RestaurantTableViewCell.xib in Resources */,
 				5AABC5001FE5A48E00548AA9 /* LaunchScreen.storyboard in Resources */,
+				5AA23B821FE8667400A082DC /* AttractionTableViewCell.xib in Resources */,
 				5A0941D01FE6983400E86A66 /* VirginiaListViewController.xib in Resources */,
+				5A65DFB71FE7196E00A2506A /* RestaurantDetailViewController.xib in Resources */,
 				5AEEF0AF1FE5AFC800A36AFD /* GoogleService-Info.plist in Resources */,
 				5AABC50A1FE5A50000548AA9 /* MainViewController.xib in Resources */,
 				5A932D9C1FE5B25300A67DC4 /* Montserrat-Regular.otf in Resources */,
@@ -258,11 +297,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA23B811FE8667400A082DC /* AttractionTableViewCell.swift in Sources */,
 				5A65DFB21FE70BF400A2506A /* RestaurantTableViewCell.swift in Sources */,
+				5AB2F3231FE857A0006B5CEA /* DataHandler.swift in Sources */,
 				5AABC5091FE5A50000548AA9 /* MainViewController.swift in Sources */,
 				5AABC4FB1FE5A48E00548AA9 /* VirginiaBeach.xcdatamodeld in Sources */,
+				5AA23B7E1FE85B2C00A082DC /* Attraction.swift in Sources */,
+				5AA23B7C1FE85B0600A082DC /* Restaurant.swift in Sources */,
 				5A0941CF1FE6983400E86A66 /* VirginiaListViewController.swift in Sources */,
+				5A65DFB61FE7196E00A2506A /* RestaurantDetailViewController.swift in Sources */,
 				5AABC4F31FE5A48E00548AA9 /* AppDelegate.swift in Sources */,
+				5A7EBA3D1FE8F987005C4061 /* AttractionDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

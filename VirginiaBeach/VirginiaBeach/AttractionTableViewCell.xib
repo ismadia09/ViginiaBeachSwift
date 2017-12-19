@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="attractionCellId" id="KGk-i7-Jjw" customClass="AttractionTableViewCell" customModule="VirginiaBeach" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-cel-attraction" translatesAutoresizingMaskIntoConstraints="NO" id="852-gk-sRb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="128.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-attraction" translatesAutoresizingMaskIntoConstraints="NO" id="XJO-Wj-5oF">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="9kG-yg-eNq"/>
+                            <constraint firstAttribute="width" constant="90" id="DgK-bc-U09"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="DTR-Vk-ReR">
+                        <rect key="frame" x="280" y="0.0" width="40" height="129"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="1dK-by-T2v"/>
+                            <constraint firstAttribute="height" constant="129" id="H9b-t6-2VT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-pX-o3T">
+                        <rect key="frame" x="98" y="11" width="174" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2z-cz-dGd">
+                        <rect key="frame" x="98" y="32" width="174" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-ej-6Kc">
+                        <rect key="frame" x="98" y="52" width="174" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0V-m2-QYG">
+                        <rect key="frame" x="98" y="78" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jc-Ii-RsQ">
+                        <rect key="frame" x="148" y="97" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_location-pin_small" translatesAutoresizingMaskIntoConstraints="NO" id="gYW-YH-QZg">
+                        <rect key="frame" x="98" y="98" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="852-gk-sRb" secondAttribute="trailing" id="F76-sb-Pww"/>
+                    <constraint firstItem="XJO-Wj-5oF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QqU-Is-9HX"/>
+                    <constraint firstAttribute="bottom" secondItem="852-gk-sRb" secondAttribute="bottom" id="VSx-Yg-igV"/>
+                    <constraint firstItem="852-gk-sRb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YiY-OF-1uJ"/>
+                    <constraint firstItem="DTR-Vk-ReR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lP6-eL-8S5"/>
+                    <constraint firstItem="852-gk-sRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="u34-Fk-r53"/>
+                    <constraint firstAttribute="trailing" secondItem="DTR-Vk-ReR" secondAttribute="trailing" id="ua3-oe-iZZ"/>
+                    <constraint firstItem="XJO-Wj-5oF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v80-Ov-0oy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="34" y="151.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Arrow" width="43" height="43"/>
+        <image name="BG-cel-attraction" width="304" height="129"/>
+        <image name="icon_location-pin_small" width="9" height="12"/>
+        <image name="placeholder-attraction" width="95" height="129"/>
+    </resources>
+</document>
